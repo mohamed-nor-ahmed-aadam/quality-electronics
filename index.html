@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 1.6;
+        color: #333;
+        background-color: rgba(47, 112, 168, 0.884);
+      }
+      .nav-bar {
+        display: flex;
+        justify-content: space-between;
+        /* align-items: center; */
+        padding: 15px 20px;
+        color: white;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        background-color: rgba(45, 45, 151, 0.829);
+      }
+      a {
+        text-decoration: none;
+        color: white;
+        font-size: 1.1rem;
+        font-weight: bold;
+      }
+      a:hover {
+        color: rgba(205, 219, 9, 0.747);
+        background-color: #fff;
+      }
+      .logo {
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
+      .nav-bar-links {
+        display: flex;
+        list-style-type: none;
+        gap: 15px;
+      }
+      .hero {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 40px 20px;
+        background:
+          linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+          url(./image/sumalt.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        color: white;
+        text-align: center;
+        margin-top: 5px;
+        min-height: 60vh;
+        object-fit: cover;
+      }
+      .hero h1 {
+        font-size: 2.5rem;
+        margin-bottom: 15px;
+      }
+      p {
+        font-size: 1.5rem;
+      }
+      /* cards */
+      .container {
+        display: flex;
+        background-color: white;
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+      }
+      .box {
+        margin: 20px 5px;
+        background-color: #333;
+        color: white;
+        max-width: 400px;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 4px 3px 5px rgba(26, 28, 110, 0.733);
+      }
+      .box img {
+        height: 170px;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+      }
+      .contant {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 220px;
+        min-width: 350px;
+        background-color: #d8d3d3bb;
+        color: white;
+      }
+      .contant p {
+        color: floralwhite;
+        font-size: 1.6rem;
+      }
+      button {
+        padding: 13px 25px;
+        margin-left: 5px;
+        margin-bottom: 5px;
+        font-size: 1.2rem;
+        background-color: rgba(0, 0, 255, 0.5);
+        color: white;
+        font-weight: bold;
+        border: none;
+        border-radius: 8px;
+        border-bottom: 4px solid #4cf10a;
+        cursor: pointer;
+      }
+
+      footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 15px 20px;
+        color: white;
+        background-color: rgba(45, 45, 151, 0.5);
+        text-align: center;
+        font-size: large;
+      }
+      #h1 {
+        text-align: center;
+        font-size: 3.5rem;
+        color: white;
+      }
+      #h1:after {
+        content: "";
+        display: block;
+        width: 200px;
+        height: 4px;
+        background-color: #fbff01;
+        margin: 1px auto 0;
+      }
+      h1,
+      h2 {
+        color: rgba(255, 255, 255, 0.795);
+        font-weight: bold;
+        font-style: italic;
+        font-family: "Times New Roman", Times, serif;
+        font-size: 2em;
+      }
+      .text {
+        color: rgba(255, 217, 0, 0.986);
+        animation: moveText 11s linear infinite;
+      }
+
+      @keyframes moveText {
+        from {
+          transform: translateX(-100%);
+        }
+        to {
+          transform: translateX(100%);
+        }
+      }
+      .contant h2,
+      p {
+        margin-left: 8px;
+      }
+      audio {
+        margin-left: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="nav-bar">
+      <div class="logo">Quality elctronics</div>
+      <ul class="nav-bar-links">
+        <li><a href="#">home</a></li>
+        <li><a href="#">about</a></li>
+        <li><a href="#">services</a></li>
+      </ul>
+    </nav>
+    <header class="hero">
+      <div class="hero-contant">
+        <h1 class="text">welcome to Quality Elctronics</h1>
+        <p>
+          Welcome to Quality Electronics, your trusted destination for the
+          latest electronic products and accessories. We are committed to
+          providing high-quality devices at affordable prices, ensuring that our
+          customers enjoy the best technology available. Our mission is to make
+          shopping for electronics simple, convenient, and reliable.
+        </p>
+      </div>
+    </header>
+    <main>
+      <h1 id="h1">our services</h1>
+      <div class="container">
+        <div class="box">
+          <img src="./image/ipone1.jpg" />
+          <div class="contant">
+            <h2>iphone 13-pro max</h2>
+            <p>
+              Latest iPhone with advanced <br />
+              camera features, <br />
+              fast processing <br />
+              speed,<br />
+              and elegant design.
+            </p>
+            <button>$1,500</button>
+          </div>
+        </div>
+        <div class="box">
+          <img src="./image/airpords.jpg" />
+          <div class="contant">
+            <h2>Airpords</h2>
+            <p>
+              Wireless earbuds delivering crystal <br />
+              clear sound, seamless connectivity, <br />
+              and all-day comfort
+            </p>
+            <button>$10</button>
+          </div>
+        </div>
+        <div class="box">
+          <img src="./image/muse.jpg" />
+          <div class="contant">
+            <h2>Mouse</h2>
+            <p>
+              Ergonomic wireless mouse designed <br />
+              for precise control and comfortable <br />
+              everyday use.
+            </p>
+            <button>$25</button>
+          </div>
+        </div>
+        <div class="box">
+          <img src="./image/sumalt.jpg" />
+          <div class="contant">
+            <h2>samsung</h2>
+            <p>
+              Modern Samsung featuring <br />
+              a vibrant display, powerful <br />
+              camera, and reliable <br />
+              performance <br />
+              and quality.
+            </p>
+            <button>$1,700</button>
+          </div>
+        </div>
+        <div class="box">
+          <img src="./image/iphone2.jpg" />
+          <div class="contant">
+            <h2>iphone17 pro max</h2>
+            <p>
+              Latest iPhone with advanced <br />
+              camera <br />
+              features, fast processing speed, <br />
+              and elegant design.
+            </p>
+            <button>$1,700</button>
+          </div>
+        </div>
+        <div class="box">
+          <img src="./image/laptop4.jpg" />
+          <div class="contant">
+            <h2>laptop apple</h2>
+            <p>
+              Slim and lightweight laptop featuring <br />
+              a modern design and long-lasting <br />
+              battery life.
+            </p>
+            <button>$5,700</button>
+          </div>
+        </div>
+        <div class="box">
+          <img src="./image/laptop3.jpg" />
+          <div class="contant">
+            <h2>Hp-Elite book</h2>
+            <p>
+              High-performance laptop <br />
+              built for multitasking, <br />
+              gaming, <br />
+              and professional <br />applications. <br />
+            </p>
+            <button>$1,400</button>
+          </div>
+        </div>
+        <div class="box">
+          <img src="./image/laptopapple.jpg" />
+          <div class="contant">
+            <h2>laptop apple</h2>
+            <p>
+              Premium iPhone <br />
+              offering smooth <br />performance, <br />
+              excellent battery <br />
+              life, and stunning display .
+            </p>
+            <button>$4,800</button>
+          </div>
+        </div>
+        <div class="box">
+          <div class="contant">
+            <h2>the Answer of what is responsive web and Meta</h2>
+            <audio controls>
+              <source style="padding: 20px" src="./audio/jawaab.mp4" />
+            </audio>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; copy 2026 All Rights Reserved by Quality Electroncs</p>
+    </footer>
+  </body>
+</html>
